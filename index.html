@@ -33,6 +33,9 @@
                     <h1>Nucamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="col-md-4 col-xl-2 align-self-center mt-4">
+                    <a href="#reserveForm"><button class="btn bg-info text-white">Reserve Campsite</button></a>
+                </div>
             </div>
         </div>
     </header>
@@ -87,10 +90,17 @@
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
-                <h3>React Lake Campground</h3>
-                <p class="d-none d-sm-block">Nestled in the foothills of Chrome Mountains, this campground on the shorts
-                    of the pristine Lake
-                    React is a favorite for fly fishers.</p>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h3>React Lake Campground</h3>
+                        <p class="d-none d-sm-block">Nestled in the foothills of Chrome Mountains, this campground on
+                            the shorts
+                            of the pristine Lake
+                            React is a favorite for fly fishers.</p>
+
+                    </div>
+                    <img class="ms-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />
+                </div>
             </div>
 
         </section>
@@ -112,6 +122,47 @@
                 </div>
             </div>
 
+        </section>
+        <section class="row row-content">
+            <div class="col-sm-9 mx-auto">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <h3>Reserve a Campsite</h3>
+                    </div>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="form-group row mb-3">
+                                <label for="number" name="number" class="col col-form-label">Number of
+                                    Campers</label>
+                                <div class="col-sm-6 mb-3">
+                                    <select name="number" id="number" class="form-control">
+                                        <option select>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group row mb-3">
+                                <label for="date" name="date" class="col col-form-label">Date</label>
+                                <div class="col-sm-6 mb-3">
+                                    <input type="date" name="date" id="date" class="form-control"
+                                        placeholder="mm/dd/yyyy" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button class="btn bg-primary text-white" type="submit">Search</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
         </section>
     </main>
 
